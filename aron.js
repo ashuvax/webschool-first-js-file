@@ -1,0 +1,1 @@
+let webschool = "ss";
