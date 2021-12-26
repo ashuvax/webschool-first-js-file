@@ -1,6 +1,6 @@
 let arnona = "";
 let allocations = "";
-const salary = parseInt(prompt("Please enter your salary:"));
+const salary = parseFloat(prompt("Please enter your salary:"));
 const people = parseInt(
   prompt("Please enter the number of people in your home:")
 );
@@ -20,8 +20,7 @@ total = total - 2950;
 //Family allocations
 if (people > 5) {
   allocations = 180 * people;
-}
-if (people > 3) {
+} else if (people > 3) {
   allocations = 203 * people;
 }
 total = total + allocations;
