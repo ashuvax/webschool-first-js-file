@@ -26,4 +26,4 @@ if (people > 3) {
 }
 total = total + allocations;
 
-alert("After all, you have " + total + "at the end of the year");
+alert("After all, you have " + total + " at the end of the year");
