@@ -18,11 +18,12 @@ total = total - arnona;
 //minus Subtract rent
 total = total - 2950;
 //Family allocations
-if (people > 5) {
-  allocations = 180 * people;
-} else if (people > 3) {
-  allocations = 203 * people;
+const child = people - 2;
+if (child > 5) {
+  allocations = 180 * child;
+} else if (child > 3) {
+  allocations = 203 * child;
 }
 total = total + allocations;
 
-alert("After all, you have " + total + " at the end of the year");
+alert("After all, you have " + total * 12 + "$ at the end of the year");
